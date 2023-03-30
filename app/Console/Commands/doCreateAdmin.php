@@ -11,14 +11,14 @@ class doCreateAdmin extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'do:createAdmin';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Command untuk create admin baru';
 
     /**
      * Execute the console command.
@@ -27,6 +27,8 @@ class doCreateAdmin extends Command
      */
     public function handle()
     {
+        $this->info("Create administrator user");
+        sleep(3);
         return Command::SUCCESS;
     }
 }
