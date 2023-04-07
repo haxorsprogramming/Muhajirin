@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\FE;
+namespace App\Http\Controllers\FE\Landing;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
-class LandingPageController extends Controller
+class PageController extends Controller
 {
     public function HomePage()
     {

@@ -13,13 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_setting', function (Blueprint $table) {
-            $table -> id();
-            $table -> char('kd_setting', 100);
-            $table -> char('nama', 200);
-            $table -> text('keterangan')->nullable();
-            $table -> text('nilai')->nullable();;
-        });
+        //
     }
 
     /**
@@ -29,6 +23,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_setting');
+        //
     }
 };

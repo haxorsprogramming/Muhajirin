@@ -7,5 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class SettingModel extends Model
 {
-    use HasFactory;
+    protected $table = "tbl_setting";
+    protected $fillable = [
+        'kd_setting',
+        'nama',
+        'active',
+        'keterangan',
+        'nilai'
+    ];
+    public $timestamps = false;
+
 }
