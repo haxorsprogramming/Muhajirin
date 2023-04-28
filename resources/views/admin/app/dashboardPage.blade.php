@@ -4,10 +4,8 @@
 <!-- Start right Content here -->
 <!-- ============================================================== -->
 <div class="main-content">
-
     <div class="page-content" id="mainApp">
         <div class="container-fluid">
-
             <!-- start page title -->
             <div class="row">
                 <div class="col-12">
@@ -20,17 +18,13 @@
                                 <li class="breadcrumb-item active">@{{ judulPage }}</li>
                             </ol>
                         </div>
-
                     </div>
                 </div>
             </div>
             <!-- end page title -->
             <div id="divUtama">
-
                 <!-- end row -->
             </div>
-
-
         </div> <!-- container-fluid -->
     </div>
     <!-- End Page-content -->

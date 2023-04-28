@@ -38,8 +38,7 @@
                                         </div>
 
                                         <div class="mt-4">
-                                            <a class="btn btn-success btn-block waves-effect waves-light"
-                                               href="javascript:void(0)" onclick="loginAtc()">Log In</a>
+                                            <a class="btn btn-success btn-block waves-effect waves-light" href="javascript:void(0)" onclick="loginAtc()" id="btnLogin">Log In</a>
                                         </div>
 
                                     </div>

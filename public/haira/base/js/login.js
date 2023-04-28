@@ -1,4 +1,5 @@
 document.querySelector("#txtUsername").focus();
+var fillPassword = document.getElementById("txtPassword");
 function loginAtc()
 {
     let endpointAuth = server+"admin/auth/login/process";
@@ -19,6 +20,12 @@ function loginAtc()
         });
     }
 }
+fillPassword.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("btnLogin").click();
+    }
+});
 function pesanUmumApp(icon, title, text)
 {
     Swal.fire({
