@@ -11,7 +11,6 @@ class SettingModel extends Model
     protected $fillable = [
         'kd_setting',
         'nama',
-        'active',
         'keterangan',
         'nilai'
     ];
