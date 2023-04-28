@@ -5,33 +5,26 @@
     <meta charset="utf-8" />
     <title>Dashboard - Muhajirin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-    <meta content="Themesdesign" name="author" />
+    <meta content="Aplikasi manajemen masjid" name="description" />
+    <meta content="Almira-Tech" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ asset('ladun/apaxy/') }}/images/favicon.ico">
-
     <!-- slick css -->
     <link href="{{ asset('haira/apaxy') }}/libs/slick-slider/slick/slick.css" rel="stylesheet" type="text/css" />
     <link href="{{ asset('haira/apaxy') }}/libs/slick-slider/slick/slick-theme.css" rel="stylesheet" type="text/css" />
-
     <!-- jvectormap -->
     <link href="{{ asset('haira/apaxy') }}/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
-
     <!-- Bootstrap Css -->
     <link href="{{ asset('haira/apaxy') }}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
     <!-- DataTables -->
     <link href="{{ asset('haira/apaxy') }}/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
     <link href="{{ asset('haira/apaxy') }}/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
     <!-- Responsive datatable examples -->
     <link href="{{ asset('haira/apaxy') }}/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-
     <!-- Icons Css -->
     <link href="{{ asset('haira/apaxy') }}/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="{{ asset('haira/apaxy') }}/css/app.min.css" rel="stylesheet" type="text/css" />
-
 </head>
 
 <body data-topbar="dark" data-layout="horizontal">
@@ -67,8 +60,6 @@
                 <button type="button" class="btn btn-sm mr-2 font-size-16 d-lg-none header-item waves-effect waves-light" data-toggle="collapse" data-target="#topnav-menu-content">
                     <i class="fa fa-fw fa-bars"></i>
                 </button>
-
-
             </div>
 
             <div class="d-flex">
@@ -116,29 +107,38 @@
                 <div class="collapse navbar-collapse" id="topnav-menu-content">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" onclick="renderPage('dashboard/beranda', 'Dashboard')">
+                            <a class="nav-link" href="javascript:void(0)" onclick="renderPage('admin/dashboard/beranda', 'Dashboard')">
                                 <i class="mdi mdi-storefront mr-2"></i>Dashboard
                             </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="mdi mdi-database mr-2"></i>Data Master <div class="arrow-down"></div>
+                                <i class="mdi mdi-database mr-2"></i>Manajemen Data<div class="arrow-down"></div>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Data Produk</a>
-                                <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Data Penjualan</a>
+                                <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Data Pengurus</a>
+                                <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Data Inventaris</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/apriori/setup', 'Proses Apriori')">
-                                <i class="mdi mdi-equalizer-outline mr-2"></i>Proses Apriori
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-database mr-2"></i>Manajemen Keuangan<div class="arrow-down"></div>
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Input Pemasukan/Pengeluaran</a>
+                                <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Laporan Keuangan</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/laporan/data', 'Laporan Apriori')">
-                                <i class="mdi mdi-file-document-box-search mr-2"></i>Laporan
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle arrow-none" href="javascript:void(0)" id="topnav-layout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-database mr-2"></i>Galery & Agenda<div class="arrow-down"></div>
                             </a>
+                            <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Input Pemasukan/Pengeluaran</a>
+                                <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Laporan Keuangan</a>
+                            </div>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:void(0)" onclick="renderPage('app/info-aplikasi', 'Informasi Aplikasi')">
                                 <i class="mdi mdi-information mr-2"></i>Info Aplikasi

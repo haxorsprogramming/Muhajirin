@@ -46,7 +46,7 @@
 <script>
     const server = "{{ url('') }}/";
 </script>
-<script src="{{ asset('ladun/base/') }}/js/mainApp.js"></script>
+<script src="{{ asset('haira/base/') }}/js/mainApp.js"></script>
 </body>
 
 </html>

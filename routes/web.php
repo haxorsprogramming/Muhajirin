@@ -14,5 +14,9 @@ Route::group(['prefix' => 'admin'], function (){
             Route::post('process', [FeAdminAuthController::class, 'LoginProcess']);
         });
     });
-    Route::get('dashboard', [FeAdminPageController::class, 'DashboardPage']);
+    Route::group(['prefix' => 'dashboard'], function (){
+        Route::get('/', [FeAdminPageController::class, 'DashboardPage']);
+        Route::get('beranda', [FeAdminPageController::class, 'BerandaPage']);
+    });
+
 });

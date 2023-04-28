@@ -26,4 +26,10 @@ class PageController extends Controller
         ];
         return view('admin.app.dashboardPage', $dr);
     }
+
+    public function BerandaPage()
+    {
+        return view('admin.app.berandaPage');
+    }
+
 }
