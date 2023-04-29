@@ -18,7 +18,7 @@ return new class extends Migration
             $table -> char('kd_setting', 100);
             $table -> char('nama', 200);
             $table -> text('keterangan')->nullable();
-            $table -> text('nilai')->nullable();;
+            $table -> text('nilai')->nullable();
         });
     }
 
