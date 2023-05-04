@@ -116,7 +116,7 @@
                                 <i class="mdi mdi-database mr-2"></i>Manajemen Data<div class="arrow-down"></div>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                <a href="javascript:void(0)" onclick="renderPage('app/produk/data', 'Produk')" class="dropdown-item">Data Pengurus</a>
+                                <a href="javascript:void(0)" onclick="renderPage('app/pengurus/data', 'Produk')" class="dropdown-item">Data Pengurus</a>
                                 <a href="javascript:void(0)" onclick="renderPage('app/penjualan/data', 'Penjualan')" class="dropdown-item">Data Inventaris</a>
                             </div>
                         </li>

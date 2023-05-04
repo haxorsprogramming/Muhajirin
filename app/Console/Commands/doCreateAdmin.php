@@ -20,7 +20,7 @@ class doCreateAdmin extends Command
      *
      * @var string
      */
-    protected $description = "Command untuk create admin baru";
+    protected $description = "Command untuk create admin baru, disable perintah ini jika dirasa perlu berbahaya";
 
     /**
      * Execute the console command.
