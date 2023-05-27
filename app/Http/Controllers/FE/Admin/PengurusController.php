@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class PengurusController extends Controller
 {
-    //
+    public function PengurusData()
+    {
+        echo "tes pengurus data";
+    }
 }
