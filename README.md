@@ -4,3 +4,4 @@
 
 ## About Muhajirin
 
+<i>Sedang dalam pengembangan</i>
